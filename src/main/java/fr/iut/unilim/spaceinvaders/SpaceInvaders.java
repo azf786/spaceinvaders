@@ -1,23 +1,13 @@
 package fr.iut.unilim.spaceinvaders;
 
+import fr.unilim.iut.spaceinvaders.moteurjeu.Commande;
+import fr.unilim.iut.spaceinvaders.moteurjeu.Jeu;
 import fr.unilim.iut.spaceinvaders.utils.DebordementEspaceJeuException;
 import fr.unilim.iut.spaceinvaders.utils.HorsEspaceJeuException;
 
-public class SpaceInvaders {
+public class SpaceInvaders implements Jeu{
 
-	public class Constante {
-
-		   public static final int ESPACEJEU_LONGUEUR = 150;
-		   public static final int ESPACEJEU_HAUTEUR = 100;
-		
-		   public static final int VAISSEAU_LONGUEUR = 30;
-		   public static final int VAISSEAU_HAUTEUR = 20;
-		   public static final int VAISSEAU_VITESSE = 5;
-		
-		   public static final char MARQUE_FIN_LIGNE = '\n';
-		   public static final char MARQUE_VIDE = '.';
-		   public static final char MARQUE_VAISSEAU = 'V';
-	   }
+	
 	int longueur;
     int hauteur;
 	Vaisseau vaisseau;
@@ -63,7 +53,7 @@ public class SpaceInvaders {
 		return this.aUnVaisseau() && vaisseau.occupeLaPosition(x, y);
 	}
 
-	private boolean aUnVaisseau() {
+	public boolean aUnVaisseau() {
 		return vaisseau!=null;
 	}
 
@@ -105,6 +95,29 @@ public class SpaceInvaders {
 
 			vaisseau = new Vaisseau(dimension,position,vitesse);
 		}
+
+	public void evoluer(Commande commandeUser) {
+		
+		if (commandeUser.gauche)
+		{
+			this.deplacerVaisseauVersLaGauche();
+		}
+
+		if (commandeUser.droite)
+		{
+			this.deplacerVaisseauVersLaDroite();
+		}
+	}
+
+	public boolean etreFini() {
+		return false;
+	}
+
+	public Vaisseau recupererVaisseau() {
+		return this.vaisseau;
+	}
+
+	
 	 
 	
 
