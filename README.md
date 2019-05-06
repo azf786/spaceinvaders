@@ -15,4 +15,7 @@ Ajouter de la classe Spirite qui est une super classe pour tous les objets dans 
 La classe vaisseau devient une sous-classe de spirite
 
 # Diagramme de classes
-![alt text](C:\Users\Azfar\Downloads\_Game_On__at_Pacific_Science_Center_(5559659293).jpg) 
+![alt](https://github.com/azf786/spaceinvaders/blob/master/model.jpg) 
+
+# Nuages de mots
+![alt](https://github.com/azf786/spaceinvaders/blob/master/nuagesdemots.png) 
