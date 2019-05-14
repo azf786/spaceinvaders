@@ -41,4 +41,4 @@ Pour les test qui echoue on modifie la methode tirer missile pour qu'il se compo
 ![alt](https://github.com/azf786/spaceinvaders/blob/master/modelS2.jpg) 
 
 # Nuages de mots
-![alt](https://github.com/azf786/spaceinvaders/blob/master/spaceinvaders2.png) 
+![alt](https://github.com/azf786/spaceinvaders/blob/master/spaceinvadersS2.png) 
