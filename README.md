@@ -38,7 +38,7 @@ On ecrit dans la classe Missile le comprtement de tirer missile.
 #### Ecrire les autres test
 Pour les test qui echoue on modifie la methode tirer missile pour qu'il se comporte comme voulue. 
 # Diagramme de classes
-![alt](https://github.com/azf786/spaceinvaders/blob/master/model.jpg) 
+![alt](https://github.com/azf786/spaceinvaders/blob/master/modelS2.jpg) 
 
 # Nuages de mots
-![alt](https://github.com/azf786/spaceinvaders/blob/master/nuagesdemots.png) 
+![alt](https://github.com/azf786/spaceinvaders/blob/master/spaceinvaders2.png) 
