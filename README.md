@@ -44,7 +44,7 @@ La classe vaisseau devient une sous-classe de spirite
 
 #### Ajout dans la classe mère Sprite du constructeur à 3 paramètres
 <p> A l'aide du refactoring on crée le constructeur de la classe Spirite qui initialize la position, la taille et la vitesse de l'objet.</p>
-<p> Modifie le constructeur de vaisseau pour qu'il fait au constructeur de la classe mère</p>
+ Modifie le constructeur de vaisseau pour qu'il fait au constructeur de la classe mère
 #### Ecrire un premier un test (cas normal de tirerUnMissile)
 le test echoue.
 On ecrit la classe tirerMissile, on modifie la classe recupererMarqueDeLaPosition pour qu'il affiche un missile a la position voulue.
