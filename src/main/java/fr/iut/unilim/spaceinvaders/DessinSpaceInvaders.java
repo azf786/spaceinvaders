@@ -30,7 +30,7 @@ public class DessinSpaceInvaders implements DessinJeu {
 		   Graphics2D crayon = (Graphics2D) im.getGraphics();
 
 		   crayon.setColor(Color.gray);
-		   crayon.fillRect(vaisseau.abscisseLaPlusAGauche()/2, vaisseau.ordonneeLaPlusBasse(), vaisseau.longueur(), vaisseau.hauteur());
+		   crayon.fillRect(vaisseau.abscisseLaPlusAGauche(), vaisseau.ordonneeLaPlusBasse(), vaisseau.longueur(), vaisseau.hauteur());
 
 	   }
 	   
@@ -38,11 +38,8 @@ public class DessinSpaceInvaders implements DessinJeu {
 		   Graphics2D crayon = (Graphics2D) im.getGraphics();
 
 		   crayon.setColor(Color.blue);
-		   int abscisseMilieuVaisseau = this.jeu.vaisseau.abscisseLaPlusAGauche() + (this.jeu.vaisseau.longueur() / 2);
-		   int abscisseOrigineMissile = abscisseMilieuVaisseau - (missile.longueur() / 2);
-
-		   int ordonneeeOrigineMissile = this.jeu.vaisseau.ordonneeLaPlusBasse() - 1;
-		   crayon.fillRect(abscisseOrigineMissile, ordonneeeOrigineMissile, missile.longueur(), missile.hauteur());
+		
+		   crayon.fillRect(missile.abscisseLaPlusAGauche(), missile.ordonneeLaPlusBasse(), missile.longueur(), missile.hauteur());
 	   }
 
 
