@@ -3,7 +3,7 @@
 # Semaine du 29 avril  au 06 Mai 2019
 
 # Description du travail effectué
-<<<<<<< HEAD
+
 Fonctionalité n2
 Ajouter la vitesse au vaisseau: on a ajouter un entier au attribut de vaisseau qui represente sa vitesse qui represente le nombre de pixel. On a intergerer la vitesse au code sur la methode seDeplacerVersLaDroite et seDeplacerVersLaDroite en modiant le +/-1 par +/- la vitesse.
 On ecrite des tests de deplacement du vaisseau avec la vitesse. 
@@ -17,7 +17,7 @@ La classe vaisseau devient une sous-classe de spirite
 
 # Diagramme de classes
 ![alt text](C:\Users\Azfar\Downloads\_Game_On__at_Pacific_Science_Center_(5559659293).jpg) 
-=======
+
 ### Fonctionalité n2
 Ajouter la vitesse au vaisseau: on a ajouter un entier au attribut de vaisseau qui represente sa vitesse qui represente le nombre de pixel. On a intergerer la vitesse au code sur la methode seDeplacerVersLaDroite et seDeplacerVersLaDroite en modiant le +/-1 par +/- la vitesse.
 On ecrite des tests de deplacement du vaisseau avec la vitesse. 
@@ -57,4 +57,4 @@ Pour les test qui echoue on modifie la methode tirer missile pour qu'il se compo
 
 # Nuages de mots
 ![alt](https://github.com/azf786/spaceinvaders/blob/master/spaceinvadersS2.png) 
->>>>>>> branch 'master' of https://github.com/azf786/spaceinvaders.git
+
