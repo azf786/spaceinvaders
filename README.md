@@ -72,6 +72,8 @@ Si un nouveau envahisseur essaye d’être positionné en dehors des limites de 
 
 
 # Diagramme de classes
-![alt text](C:\Users\Azfar\Downloads\_Game_On__at_Pacific_Science_Center_(5559659293).jpg) 
+![alt text](https://github.com/azf786/spaceinvaders/blob/master/model3.jpg) 
 
+# Nuages de mots
+![alt](https://github.com/azf786/spaceinvaders/blob/master/spaceinvaders3.png) 
 
