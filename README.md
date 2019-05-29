@@ -81,8 +81,8 @@ Comparer les coordonnées des deux spites.
 
 
 # Diagramme de classes
-![alt text](https://github.com/azf786/spaceinvaders/blob/master/model3.jpg) 
+![alt text](https://github.com/azf786/spaceinvaders/blob/master/model4.jpg) 
 
 # Nuages de mots
-![alt](https://github.com/azf786/spaceinvaders/blob/master/spaceinvaders3.png) 
+![alt](https://github.com/azf786/spaceinvaders/blob/master/spaceinvaders4.png) 
 
