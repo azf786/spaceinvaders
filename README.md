@@ -69,6 +69,15 @@ Un nouveau envahisseur est créé avec des dimensions
 L'envahisseur est positionné aux coordonnées transmis
 Si un nouveau envahisseur essaye d’être positionné en dehors des limites de l’espace jeu, alors une exception devra être levée.
 ### Story n°2 : Deplacer un envahisseur dans l'espace de jeu : 
+Déplacer l'envahisseur avec vitesse prédefinie vers une direction prédefine(Gauche ou droite)
+Chager la direction une fois que l'envahisseur touche le bord
+
+## Fonctionalité n6: Détecter une collision entre deux sprites :
+### Story n°1 : Creation de la classe colision
+Créer la classe colision
+### Story n°2 : Creation de la méthode detecterColision : 
+La methode prend en paramètres deux Spirites.
+Comparer les coordonnées des deux spites.
 
 
 # Diagramme de classes
