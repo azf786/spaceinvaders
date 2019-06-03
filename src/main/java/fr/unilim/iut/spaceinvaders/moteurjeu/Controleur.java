@@ -2,6 +2,7 @@ package fr.unilim.iut.spaceinvaders.moteurjeu;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.concurrent.TimeUnit;
 
 /**
  * classe qui represente un controleur en lien avec un KeyListener
@@ -67,6 +68,13 @@ public class Controleur implements KeyListener {
 			case KeyEvent.VK_SPACE:
 				this.commandeEnCours.tir = true;
 				this.commandeARetourner.tir = true;
+				this.commandeEnCours.tir = false;
+				/*try {
+					TimeUnit.SECONDS.sleep(3);
+				} catch (InterruptedException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}*/
 				break;
 			default:
 				break;

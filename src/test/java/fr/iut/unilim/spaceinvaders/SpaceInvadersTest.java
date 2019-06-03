@@ -421,28 +421,4 @@ public class SpaceInvadersTest {
        "...............\n" , spaceinvaders.recupererEspaceJeuDansChaineASCII());
    }
 
-   
-   
-   @Test
-   public void collision_Test() {
-	   spaceinvaders.positionnerUnNouveauVaisseau(new Dimension(7,2),new Position(5,9), 2);
-	   spaceinvaders.tirerUnMissile(new Dimension(3,2),2);
-	   spaceinvaders.positionnerUnNouveauEnvahisseur(new Dimension(3,2),new Position(6,3), 1);
-
-	   spaceinvaders.deplacerMissile();
-	   spaceinvaders.deplacerMissile();
-	   
-	   
-      assertEquals("" + 
-      "...............\n" + 
-      "...............\n" +
-      "...............\n" + 
-      "...............\n" + 
-      "...............\n" + 
-      "...............\n" + 
-      "...............\n" + 
-      "...............\n" + 
-      ".....VVVVVVV...\n" + 
-      ".....VVVVVVV...\n" , spaceinvaders.recupererEspaceJeuDansChaineASCII());
-    }
 }

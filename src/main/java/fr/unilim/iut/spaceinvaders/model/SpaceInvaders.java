@@ -1,6 +1,8 @@
 package fr.unilim.iut.spaceinvaders.model;
 
 
+import java.util.ArrayList;
+
 import fr.unilim.iut.spaceinvaders.moteurjeu.Commande;
 import fr.unilim.iut.spaceinvaders.moteurjeu.Jeu;
 import fr.unilim.iut.spaceinvaders.utils.DebordementEspaceJeuException;
@@ -29,7 +31,7 @@ public class SpaceInvaders implements Jeu{
     public void initialiserJeu() {
 		Position positionVaisseau = new Position(this.longueur/2,this.hauteur-1);
 		Dimension dimensionVaisseau = new Dimension(Constante.VAISSEAU_LONGUEUR, Constante.VAISSEAU_HAUTEUR);
-		Position positionEnvahisseur = new Position(this.longueur/2, this.hauteur-50);
+		Position positionEnvahisseur = new Position(this.longueur/2, 10);
 		Dimension dimensionEnvahisseur = new Dimension(Constante.ENVAHISSEUR_LONGUEUR, Constante.ENVAHISSEUR_HAUTEUR);
 		positionnerUnNouveauVaisseau(dimensionVaisseau, positionVaisseau, Constante.VAISSEAU_VITESSE);
 		positionnerUnNouveauEnvahisseur(dimensionEnvahisseur, positionEnvahisseur, Constante.ENVAHISSEUR_VITESSE);
@@ -143,20 +145,28 @@ public class SpaceInvaders implements Jeu{
 						Constante.MISSILE_VITESSE);
 			
 		}
+		
 		if (this.aUnMissile()) {
 			deplacerMissile();
 		}
 		if (this.aUnEnvahisseur()) {
 			this.deplacerEnvahisseur();   
 		}
-		if (this.aUnMissile() && this.aUnEnvahisseur() && this.missile.ordonneeLaPlusHaute() >= 0 &&  colision.detecterCollision(missile,envahisseur) ) {
-			this.envahisseur=null;
+		if(colision.detecterCollision(missile, envahisseur)) {
 			this.missile = null;
+			this.envahisseur = null;
+			this.vaisseau = null;
 		}
+		
 	}
 
 	public boolean etreFini() {
-		return false;
+		if(null == vaisseau) {
+			return true;
+		}else {
+			return false;
+		}
+		
 	}
 
 	public Vaisseau recupererVaisseau() {
@@ -169,14 +179,23 @@ public class SpaceInvaders implements Jeu{
 	 public void tirerUnMissile(Dimension dimensionMissile, int vitesse) {
 		 if ((vaisseau.hauteur()+ dimensionMissile.hauteur()) > this.hauteur )
 			   throw new MissileException("Pas assez de hauteur libre entre le vaisseau et le haut de l'espace jeu pour tirer le missile");
-		this.missile = this.vaisseau.tirerUnMissile(dimensionMissile,vitesse);
+		 
+			 this.missile = this.vaisseau.tirerUnMissile(dimensionMissile,vitesse);
+		
 	}
 
 	public void deplacerMissile() {
 		this.missile.deplacerVerticalementVers(Direction.HAUT_ECRAN);
+		
 		if (this.missile.ordonneeLaPlusHaute() <= 0) {
 			this.missile=null;
 		}
+		
+		/*if (this.aUnMissile() && this.aUnEnvahisseur()  &&  colision.detecterCollision(missile,envahisseur) ) {
+			this.envahisseur=null;
+			this.missile = null;
+			this.vaisseau = null;
+		}*/
 				
 	}
 	
@@ -231,4 +250,5 @@ public class SpaceInvaders implements Jeu{
 		}
 	}
 
+	
 }
