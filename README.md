@@ -78,7 +78,8 @@ La methode prend en paramètres deux Spirites.
 Comparer les coordonnées des deux spites.
 
 Pour tester la colision, on crée la classe ColisionTest:
-On verifie tous les cas possible 
+On verifie tous les cas possible
+![alt text](https://github.com/azf786/spaceinvaders/blob/master/testColision.jpg) 
 
 
 # Diagramme de classes
