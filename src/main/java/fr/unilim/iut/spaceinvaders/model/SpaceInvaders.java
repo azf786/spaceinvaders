@@ -190,12 +190,6 @@ public class SpaceInvaders implements Jeu{
 		if (this.missile.ordonneeLaPlusHaute() <= 0) {
 			this.missile=null;
 		}
-		
-		/*if (this.aUnMissile() && this.aUnEnvahisseur()  &&  colision.detecterCollision(missile,envahisseur) ) {
-			this.envahisseur=null;
-			this.missile = null;
-			this.vaisseau = null;
-		}*/
 				
 	}
 	
