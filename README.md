@@ -25,7 +25,7 @@ La classe vaisseau devient une sous-classe de spirite
 ![alt](https://github.com/azf786/spaceinvaders/blob/master/nuagesdemots.png) 
 
 
-## Semaine du 06 avril  au 14 Mai 2019
+## Semaine du 06 mai  au 14 Mai 2019
 
 # Description du travail effectué
 ### Fonctionalité n4 (suite et fin)
@@ -47,7 +47,7 @@ Pour les test qui echoue on modifie la methode tirer missile pour qu'il se compo
 ![alt](https://github.com/azf786/spaceinvaders/blob/master/spaceinvadersS2.png) 
 
 
-# Semaine du 14 avril  au 21 Mai 2019
+# Semaine du 14 mai  au 21 Mai 2019
 
 # Description du travail effectué
 
@@ -87,4 +87,29 @@ On verifie tous les cas possible
 
 # Nuages de mots
 ![alt](https://github.com/azf786/spaceinvaders/blob/master/spaceinvaders4.png) 
+
+# Semaine du 21 mai  au 06 juin 2019
+
+# Description du travail effectué
+
+## Fonctionalité n6 (suite)
+
+
+### Intégration graphique:
+Ajout de l'atribut colision dans le jeu (spaceInvaders) qui sera initialisé lors de l'initialisation du jeu
+Dans la methode evoluer ajout de la condition, si il ya colision: on fait disparraitre le missile et l'envahisseur
+
+## Fonctionalité n7 Terminer la partie 
+### Story n°1 : finir la partie
+Créer la classe colision
+### Story n°2 : Creation de la méthode detecterColision : 
+La methode prend en paramètres deux Spirites.
+Comparer les coordonnées des deux spites.
+
+
+### Intégration graphique:
+Ajout de l'atribut colision dans le jeu (spaceInvaders) qui sera initialisé lors de l'initialisation du jeu
+Dans la methode evoluer ajout de la condition, si il ya colision: on fait disparraitre le missile et l'envahisseur
+
+
 
