@@ -1,6 +1,7 @@
 package fr.iut.unilim.spaceinvaders;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 import org.junit.Before;
@@ -420,5 +421,18 @@ public class SpaceInvadersTest {
        "...............\n" + 
        "...............\n" , spaceinvaders.recupererEspaceJeuDansChaineASCII());
    }
+   
+   @Test
+   public void collision_Test() {
+	   spaceinvaders.positionnerUnNouveauVaisseau(new Dimension(7,2),new Position(5,9), 2);
+	   spaceinvaders.tirerUnMissile(new Dimension(3,2),2);
+	   spaceinvaders.positionnerUnNouveauEnvahisseur(new Dimension(3,2),new Position(6,3), 1);
+
+	   spaceinvaders.deplacerMissile();
+	   spaceinvaders.deplacerMissile();
+	   
+	   
+       assertTrue(spaceinvaders.etreFini());
+    }
 
 }

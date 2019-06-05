@@ -6,7 +6,7 @@ public class Constante {
 	   public static final int ESPACEJEU_HAUTEUR = 100;
 	
 	   public static final int VAISSEAU_LONGUEUR = 40;
-	   public static final int VAISSEAU_HAUTEUR = 8;
+	   public static final int VAISSEAU_HAUTEUR = 10;
 	   public static final int VAISSEAU_VITESSE = 10;
 	
 	   public static final char MARQUE_FIN_LIGNE = '\n';

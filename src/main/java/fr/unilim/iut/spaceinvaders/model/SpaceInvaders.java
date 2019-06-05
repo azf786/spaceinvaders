@@ -1,7 +1,6 @@
 package fr.unilim.iut.spaceinvaders.model;
 
 
-import java.util.ArrayList;
 
 import fr.unilim.iut.spaceinvaders.moteurjeu.Commande;
 import fr.unilim.iut.spaceinvaders.moteurjeu.Jeu;
@@ -98,7 +97,7 @@ public class SpaceInvaders implements Jeu{
 		if (vaisseau.abscisseLaPlusADroite() < (longueur - 1)) {
 			vaisseau.deplacerHorizontalementVers(Direction.DROITE);;
 			if (!estDansEspaceJeu(vaisseau.abscisseLaPlusADroite(), vaisseau.ordonneeLaPlusHaute())) {
-				vaisseau.positionner(longueur - vaisseau.dimension.longueur(), vaisseau.ordonneeLaPlusHaute());
+				vaisseau.positionner(longueur - vaisseau.dimensionVaisseau().longueur(), vaisseau.ordonneeLaPlusHaute());
 			}
 		}
 	}
@@ -161,7 +160,7 @@ public class SpaceInvaders implements Jeu{
 	}
 
 	public boolean etreFini() {
-		if(null == vaisseau) {
+		if(colision.detecterCollision(missile, envahisseur)) {
 			return true;
 		}else {
 			return false;
@@ -237,7 +236,7 @@ public class SpaceInvaders implements Jeu{
 
 	public void positionnerEnvahisseurSiHorsEspaceDeJeux() {
 		if (!estDansEspaceJeu(envahisseur.abscisseLaPlusADroite(), envahisseur.ordonneeLaPlusHaute())) {
-			envahisseur.positionner(longueur - envahisseur.dimension.longueur(), envahisseur.ordonneeLaPlusHaute());
+			envahisseur.positionner(longueur - envahisseur.dimensionVaisseau().longueur(), envahisseur.ordonneeLaPlusHaute());
 		}
 		if (!estDansEspaceJeu(envahisseur.abscisseLaPlusAGauche(), envahisseur.ordonneeLaPlusHaute())) {
 			envahisseur.positionner(0, envahisseur.ordonneeLaPlusHaute());

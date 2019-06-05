@@ -2,9 +2,9 @@ package fr.unilim.iut.spaceinvaders.model;
 
 public abstract class Sprite {
 
-	protected Position origine;
-	public Dimension dimension;
-	protected int vitesse;
+	private Position origine;
+	private Dimension dimension;
+	private int vitesse;
 
 	public Sprite( Dimension dimension,Position origine, int vitesse) {
 		super();
@@ -17,6 +17,9 @@ public abstract class Sprite {
 		super();
 	}
 
+	public Dimension dimensionVaisseau() {
+		return this.dimension;
+	}
 	public boolean occupeLaPosition(int x, int y) {
 	    return estAbscisseCouverte(x) && estOrdonneeCouverte(y);
 	}
