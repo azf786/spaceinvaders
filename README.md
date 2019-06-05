@@ -99,5 +99,17 @@ On verifie tous les cas possible
 Ajout de l'atribut colision dans le jeu (spaceInvaders) qui sera initialisé lors de l'initialisation du jeu
 Dans la methode evoluer ajout de la condition, si il ya colision: on fait disparraitre le missile et l'envahisseur
 
+## Fonctionalité n7 Terminer la partie 
+### Story n°1 : finir la partie
+Créer la classe colision
+### Story n°2 : Creation de la méthode detecterColision : 
+La methode prend en paramètres deux Spirites.
+Comparer les coordonnées des deux spites.
+
+
+### Intégration graphique:
+Ajout de l'atribut colision dans le jeu (spaceInvaders) qui sera initialisé lors de l'initialisation du jeu
+Dans la methode evoluer ajout de la condition, si il ya colision: on fait disparraitre le missile et l'envahisseur
+
 
 
