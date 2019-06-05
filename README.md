@@ -19,10 +19,10 @@ La classe vaisseau devient une sous-classe de spirite
 ### Ajout dans la classe mère Sprite du constructeur à 3 paramètres;
 
 # Diagramme de classes
-![alt](https://github.com/azf786/spaceinvaders/blob/master/model.jpg) 
+![alt](https://github.com/azf786/spaceinvaders/blob/master/ressources/model.jpg) 
 
 # Nuages de mots
-![alt](https://github.com/azf786/spaceinvaders/blob/master/nuagesdemots.png) 
+![alt](https://github.com/azf786/spaceinvaders/blob/master/ressources/nuagesdemots.png) 
 
 
 ## Semaine du 06 mai  au 14 Mai 2019
@@ -41,10 +41,10 @@ On ecrit dans la classe Missile le comprtement de tirer missile.
 #### Ecrire les autres test
 Pour les test qui echoue on modifie la methode tirer missile pour qu'il se comporte comme voulue. 
 # Diagramme de classes
-![alt](https://github.com/azf786/spaceinvaders/blob/master/modelS2.jpg) 
+![alt](https://github.com/azf786/spaceinvaders/blob/master/ressources/modelS2.jpg) 
 
 # Nuages de mots
-![alt](https://github.com/azf786/spaceinvaders/blob/master/spaceinvadersS2.png) 
+![alt](https://github.com/azf786/spaceinvaders/blob/master/ressources/spaceinvadersS2.png) 
 
 
 # Semaine du 14 mai  au 21 Mai 2019
@@ -79,14 +79,14 @@ Comparer les coordonnées des deux spites.
 
 Pour tester la colision, on crée la classe ColisionTest:
 On verifie tous les cas possible
-![alt text](https://github.com/azf786/spaceinvaders/blob/master/testColision.jpg) 
+![alt text](https://github.com/azf786/spaceinvaders/blob/master/ressources/testColision.jpg) 
 
 
 # Diagramme de classes
-![alt text](https://github.com/azf786/spaceinvaders/blob/master/model4.jpg) 
+![alt text](https://github.com/azf786/spaceinvaders/blob/master/ressources/model4.jpg) 
 
 # Nuages de mots
-![alt](https://github.com/azf786/spaceinvaders/blob/master/spaceinvaders4.png) 
+![alt](https://github.com/azf786/spaceinvaders/blob/master/ressources/spaceinvaders4.png) 
 
 # Semaine du 21 mai  au 06 juin 2019
 
