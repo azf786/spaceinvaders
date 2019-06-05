@@ -25,7 +25,7 @@ La classe vaisseau devient une sous-classe de spirite
 ![alt](https://github.com/azf786/spaceinvaders/blob/master/nuagesdemots.png) 
 
 
-## Semaine du 06 avril  au 14 Mai 2019
+## Semaine du 06 mai  au 14 Mai 2019
 
 # Description du travail effectué
 ### Fonctionalité n4 (suite et fin)
@@ -47,7 +47,7 @@ Pour les test qui echoue on modifie la methode tirer missile pour qu'il se compo
 ![alt](https://github.com/azf786/spaceinvaders/blob/master/spaceinvadersS2.png) 
 
 
-# Semaine du 14 avril  au 21 Mai 2019
+# Semaine du 14 mai  au 21 Mai 2019
 
 # Description du travail effectué
 
@@ -88,45 +88,16 @@ On verifie tous les cas possible
 # Nuages de mots
 ![alt](https://github.com/azf786/spaceinvaders/blob/master/spaceinvaders4.png) 
 
-# Semaine du 21 avril  au 06 Mai 2019
+# Semaine du 21 mai  au 06 juin 2019
 
 # Description du travail effectué
 
-## Fonctionalité n7
-### Story n°1 : Positionner un nouveau vaisseau dans l’espace de jeu : 
-Un nouveau envahisseur est créé avec des dimensions 
-L'envahisseur est positionné aux coordonnées transmis
-Si un nouveau envahisseur essaye d’être positionné en dehors des limites de l’espace jeu, alors une exception devra être levée.
-### Story n°2 : Deplacer un envahisseur dans l'espace de jeu : 
-Déplacer l'envahisseur avec vitesse prédefinie vers une direction prédefine(Gauche ou droite)
-Une direction doit être definie dans la classe envahisseur qui prendra une valeur par defaut
-Chager la direction une fois que l'envahisseur touche le bord
+## Fonctionalité n6 (suite)
 
-Pour tester le deplacement de l'envahisseur on place:
-l'envahisseur au milieu: il se deplace vers la position prédefinie
-l'envahisseur est au bord gauche de l'ecran: il se depllace vers la droite
-l'envahisseur est au bord droite de l'ecran: il se depllace vers la gauche
 
 ### Intégration graphique:
-Dans la classe dessinSpaceInvaders on crée la methode dessinerEnvahisseur qui dessine un rectangle à partir des coordonnées de l'envahisseur
-Pour deplacer automatiquement l'envahisseur on ajoute dans la methode evoluer si il y'a vaisseau alors deplacer le vaisseau
+Ajout de l'atribut colision dans le jeu (spaceInvaders) qui sera initialisé lors de l'initialisation du jeu
+Dans la methode evoluer ajout de la condition, si il ya colision: on fait disparraitre le missile et l'envahisseur
 
-## Fonctionalité n6: Détecter une collision entre deux sprites :
-### Story n°1 : Creation de la classe colision
-Créer la classe colision
-### Story n°2 : Creation de la méthode detecterColision : 
-La methode prend en paramètres deux Spirites.
-Comparer les coordonnées des deux spites.
-
-Pour tester la colision, on crée la classe ColisionTest:
-On verifie tous les cas possible
-![alt text](https://github.com/azf786/spaceinvaders/blob/master/testColision.jpg) 
-
-
-# Diagramme de classes
-![alt text](https://github.com/azf786/spaceinvaders/blob/master/model4.jpg) 
-
-# Nuages de mots
-![alt](https://github.com/azf786/spaceinvaders/blob/master/spaceinvaders4.png) 
 
 
