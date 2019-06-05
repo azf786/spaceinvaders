@@ -112,7 +112,7 @@ On dissine sur l'ecran "Fin de Partie"
 
 
 # Diagramme de classes
-![alt](https://github.com/azf786/spaceinvaders/blob/master/ressources/ressources/model5.jpg) 
+![alt](https://github.com/azf786/spaceinvaders/blob/master/ressources/model5.jpg) 
 
 # Nuages de mots
-![alt](https://github.com/azf786/spaceinvaders/blob/master/ressources/ressources/spaceinvaders5.png) 
+![alt](https://github.com/azf786/spaceinvaders/blob/master/ressources/spaceinvaders5.png) 
