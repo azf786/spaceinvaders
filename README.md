@@ -19,10 +19,10 @@ La classe vaisseau devient une sous-classe de spirite
 ### Ajout dans la classe mère Sprite du constructeur à 3 paramètres;
 
 # Diagramme de classes
-![alt](https://github.com/azf786/spaceinvaders/blob/master/model.jpg) 
+![alt](https://github.com/azf786/spaceinvaders/blob/master/ressources/model.jpg) 
 
 # Nuages de mots
-![alt](https://github.com/azf786/spaceinvaders/blob/master/nuagesdemots.png) 
+![alt](https://github.com/azf786/spaceinvaders/blob/master/ressources/nuagesdemots.png) 
 
 
 ## Semaine du 06 mai  au 14 Mai 2019
@@ -41,10 +41,10 @@ On ecrit dans la classe Missile le comprtement de tirer missile.
 #### Ecrire les autres test
 Pour les test qui echoue on modifie la methode tirer missile pour qu'il se comporte comme voulue. 
 # Diagramme de classes
-![alt](https://github.com/azf786/spaceinvaders/blob/master/modelS2.jpg) 
+![alt](https://github.com/azf786/spaceinvaders/blob/master/ressources/modelS2.jpg) 
 
 # Nuages de mots
-![alt](https://github.com/azf786/spaceinvaders/blob/master/spaceinvadersS2.png) 
+![alt](https://github.com/azf786/spaceinvaders/blob/master/ressources/spaceinvadersS2.png) 
 
 
 # Semaine du 14 mai  au 21 Mai 2019
@@ -79,14 +79,14 @@ Comparer les coordonnées des deux spites.
 
 Pour tester la colision, on crée la classe ColisionTest:
 On verifie tous les cas possible
-![alt text](https://github.com/azf786/spaceinvaders/blob/master/testColision.jpg) 
+![alt text](https://github.com/azf786/spaceinvaders/blob/master/ressources/testColision.jpg) 
 
 
 # Diagramme de classes
-![alt text](https://github.com/azf786/spaceinvaders/blob/master/model4.jpg) 
+![alt text](https://github.com/azf786/spaceinvaders/blob/master/ressources/model4.jpg) 
 
 # Nuages de mots
-![alt](https://github.com/azf786/spaceinvaders/blob/master/spaceinvaders4.png) 
+![alt](https://github.com/azf786/spaceinvaders/blob/master/ressources/spaceinvaders4.png) 
 
 # Semaine du 21 mai  au 06 juin 2019
 
@@ -101,15 +101,18 @@ Dans la methode evoluer ajout de la condition, si il ya colision: on fait dispar
 
 ## Fonctionalité n7 Terminer la partie 
 ### Story n°1 : finir la partie
-Créer la classe colision
-### Story n°2 : Creation de la méthode detecterColision : 
-La methode prend en paramètres deux Spirites.
-Comparer les coordonnées des deux spites.
+Si on detecte la colision entre le missile et l'envahisseur on met etreFini à true
 
+Verifier dans les test si après la colision etreFini est à true 
 
 ### Intégration graphique:
-Ajout de l'atribut colision dans le jeu (spaceInvaders) qui sera initialisé lors de l'initialisation du jeu
-Dans la methode evoluer ajout de la condition, si il ya colision: on fait disparraitre le missile et l'envahisseur
+Modification de la classe DessinSpaceInvaders pour gerer la colision
+Après la destruction de l'envahisseur etreFini est a true
+On dissine sur l'ecran "Fin de Partie"
 
 
+# Diagramme de classes
+![alt](https://github.com/azf786/spaceinvaders/blob/master/ressources/ressources/model5.jpg) 
 
+# Nuages de mots
+![alt](https://github.com/azf786/spaceinvaders/blob/master/ressources/ressources/spaceinvaders5.png) 
